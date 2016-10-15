@@ -8,9 +8,9 @@
 
   2. Criar tabela de usuário:
   <snippet>
-	CREATE TABLE `teste_db`.`User` (
-	  `Name` VARCHAR(200) NOT NULL,
-	  PRIMARY KEY (`Name`));
+	CREATE TABLE teste_db.User (
+	  Name VARCHAR(200) NOT NULL,
+	  PRIMARY KEY (Name));
   </snippet>
 
   3. Alterar suas credenciais de acesso SGBD na src/main/Hackaton/IniciativaProgramadores/infrastructure/database/configuration/DataBaseConstants.java. Exemplo: 
