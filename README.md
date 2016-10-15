@@ -2,7 +2,9 @@
 
 ## Manuel de Uso
   1. Criar base de dados:
-	`CREATE DATABASE teste_db;`
+	```sql
+	CREATE DATABASE teste_db;
+	```
 
   2. Criar tabela de usuário:
 	```sql
