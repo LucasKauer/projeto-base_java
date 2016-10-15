@@ -31,7 +31,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/user/update")
-	public GreetViewModel update(@RequestParam(value = "newName", defaultValue = "Default Atualizado!") String newName, @RequestParam(value = "newName", defaultValue = "Default") String oldName)
+	public GreetViewModel update(@RequestParam(value = "newName", defaultValue = "Default Atualizado!") String newName, @RequestParam(value = "oldName", defaultValue = "Default") String oldName)
 			throws DependencyInjectionException {
 		
 		User newUser = new UserImpl(newName);
