@@ -1,34 +1,20 @@
 # Hackaton
 
 ## Manuel de Uso
-  -> Criar base de dados:
-  <snippet>
-	CREATE DATABASE teste_db;
-  </snippet>
+  1. Criar base de dados:
+	`CREATE DATABASE teste_db;`
 
-  -> Criar tabela de usuário:
-  <snippet>
-	CREATE TABLE teste_db.User (
-	  Name VARCHAR(200) NOT NULL,
-	  PRIMARY KEY (Name));
-  </snippet>
+  2. Criar tabela de usuário:
+	`CREATE TABLE teste_db.User (Name VARCHAR(200) NOT NULL, PRIMARY KEY (Name));`
 
-  -> Alterar suas credenciais de acesso SGBD na src/main/Hackaton/IniciativaProgramadores/infrastructure/database/configuration/DataBaseConstants.java. Exemplo: 
-  <snippet>
-	public final class DataBaseConstants {
-	public static final String DRIVER = "com.mysql.jdbc.Driver";
-	public static final String URL = "jdbc:mysql://localhost:3306/teste_db";
-	public static final String USER = "root";
-	public static final String PASSWORD = "";
-}
-  </snippet>
+  3. Alterar suas credenciais de acesso SGBD na `src/main/Hackaton/IniciativaProgramadores/infrastructure/database/configuration/DataBaseConstants.java`.
 
-  -> Para atualizar as dependências do pom.xml abra o eclipse, selecione o projeto, aperte `Alt+F5` e depois `ENTER`.
+  4. Para atualizar as dependências do pom.xml abra o eclipse, selecione o projeto, aperte `Alt+F5` e depois `ENTER`.
 
-  -> Execute o projeto e acesse
-    -> `localhost:8082/user/save?name=lucs`
-    -> `localhost:8082/user/update?newName=lucas&oldName=lucs`
-    -> `localhost:8082/user/delete?name=lucas`
+  5. Execute o projeto e acesse
+    a. `localhost:8082/user/save?name=lucs`
+    b. `localhost:8082/user/update?newName=lucas&oldName=lucs`
+    c. `localhost:8082/user/delete?name=lucas`
 
 ## Contribua
 1. Dê Fork!
