@@ -12,7 +12,7 @@ public class Provider {
 	}
 
 	public static Provider getInstance() {
-		if (Provider.instance == null)
+		if (Provider.instance == null) // Singleton Pattern
 			Provider.instance = new Provider();
 		return Provider.instance;
 	}

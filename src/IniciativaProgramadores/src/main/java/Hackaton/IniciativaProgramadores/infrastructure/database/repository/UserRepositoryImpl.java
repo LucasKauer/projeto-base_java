@@ -1,12 +1,12 @@
 package Hackaton.IniciativaProgramadores.infrastructure.database.repository;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
 import Hackaton.IniciativaProgramadores.domain.user.User;
 import Hackaton.IniciativaProgramadores.infrastructure.database.configuration.DataBaseConnection;
 import Hackaton.IniciativaProgramadores.infrastructure.dependencyinjection.DependencyInjectionException;
 import Hackaton.IniciativaProgramadores.infrastructure.dependencyinjection.Provider;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class UserRepositoryImpl implements UserRepository {
 
@@ -17,7 +17,7 @@ public class UserRepositoryImpl implements UserRepository {
 	private DataBaseConnection _dataBaseConnection;
 	
 	public UserRepositoryImpl() throws DependencyInjectionException {
-		_dataBaseConnection =  Provider.getInstance().get(DataBaseConnection.class);;
+		_dataBaseConnection =  Provider.getInstance().get(DataBaseConnection.class);
 	}
 	
 	@Override
@@ -65,7 +65,6 @@ public class UserRepositoryImpl implements UserRepository {
 		PreparedStatement preparedStatement = _dataBaseConnection.getConnection().prepareStatement(INSERT_USER);
 		preparedStatement.setString(1, user.getName());
 		preparedStatement.executeUpdate();
-		
 	}
 
 	private void updateCommand(User newUser, User oldUser) throws SQLException {
