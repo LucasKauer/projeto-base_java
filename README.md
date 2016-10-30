@@ -28,6 +28,24 @@
     b. `localhost:8082/user/update?newName=lucas&oldName=lucs`
     c. `localhost:8082/user/delete?name=lucas`
 
+### Setup na IDE IntelliJ IDEA
+
+   1. Siga os passos 1, 2, 3 anteriores.
+    
+   2. Faça fork do projeto em: https://github.com/LucasKauer/projeto-base_java
+   
+   3. Se tiver algum projeto aberto, feche-o. Após isso, vá em "Check out from Version Control" e selecione GitHub.
+   
+   4. Depois, insira seu login e senha do GitHub.
+   
+   5. Escolha o Repositório que realizou fork previamente.
+   
+   6. Clique em "Import project from external model" e escolha Eclipse. Clique Next até Finish.
+   
+   7. Botão Direito no Projeto, clique em "Add Framework Support".
+   
+   8. Agora basta selecionar o Maven e permiti-lo adicionar as bibliotecas necessárias.
+
 ## Leituras Interessantes
 
   1. [Convenção de Commits](https://github.com/CWISoftware/crescer-2016-2/wiki/Convenção-de-commits)
